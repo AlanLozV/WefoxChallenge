@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Lego_Automation:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8e527b28-6ca5-4f0b-a322-e6a8df930efd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +30,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1tVVim1w1BzA9zehz3qgnbaa9z6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,14 +40,59 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webdrivers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alan-\Lego_Automation\webdrivers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.LegoTest">
+    <configuration name="Lego_Automation" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="LegoTest" type="TestNG" nameIsGenerated="true">
       <module name="Lego_Automation" />
       <useClassPathOnly />
@@ -85,6 +137,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Maven.Lego_Automation" />
+      <item itemvalue="TestNG.LegoTest" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,38 +156,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" width="1089" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622922482437">
+    <state x="223" y="67" width="1089" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623103699498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" width="1089" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1622922482437" />
+    <state x="223" y="67" width="1089" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1623103699498" />
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1622929439715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1622929439715" />
-    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1622921684082">
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1623103858864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1622921684082" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1623103858864" />
     <state x="346" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1622924712384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="346" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1622924712384" />
-    <state width="1493" height="303" key="GridCell.Tab.0.bottom" timestamp="1623005967139">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1623103863678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623005967139" />
-    <state width="1493" height="303" key="GridCell.Tab.0.center" timestamp="1623005967139">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1623103863678" />
+    <state width="1493" height="303" key="GridCell.Tab.0.bottom" timestamp="1623103963557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623005967139" />
-    <state width="1493" height="303" key="GridCell.Tab.0.left" timestamp="1623005967139">
+    <state width="1493" height="303" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623103963557" />
+    <state width="1493" height="303" key="GridCell.Tab.0.center" timestamp="1623103963557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623005967139" />
-    <state width="1493" height="303" key="GridCell.Tab.0.right" timestamp="1623005967139">
+    <state width="1493" height="303" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623103963557" />
+    <state width="1493" height="303" key="GridCell.Tab.0.left" timestamp="1623103963557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="303" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623005967139" />
+    <state width="1493" height="303" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623103963557" />
+    <state width="1493" height="303" key="GridCell.Tab.0.right" timestamp="1623103963557">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="303" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623103963557" />
     <state width="1493" height="303" key="GridCell.Tab.1.bottom" timestamp="1623005655621">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -148,10 +208,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="303" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1623005655621" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1623002100333">
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1623096830637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1623002100333" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1623096830637" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1623103869263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1623103869263" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1623096284222">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1623096284222" />
     <state x="93" y="93" width="1350" height="638" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1622934255980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -164,6 +232,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="10" width="609" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1623000970882" />
+    <state x="209" y="108" key="new project wizard" timestamp="1623095987342">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="108" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1623095987342" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1622934037879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

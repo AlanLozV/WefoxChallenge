@@ -1,0 +1,12 @@
+com\wefox\automation\java\utils\DriverSetup.class
+com\wefox\automation\java\data\Product.class
+com\wefox\automation\java\page\BasePage.class
+com\wefox\automation\java\page\LandingPage.class
+com\wefox\automation\java\elements\LandingElements.class
+com\wefox\automation\java\elements\ProductDetailsElements.class
+com\wefox\automation\java\utils\LegoWebpageData.class
+com\wefox\automation\java\elements\ShopingBagElements.class
+com\wefox\automation\java\elements\ShopByAgeElements.class
+com\wefox\automation\java\page\ShopByAgePage.class
+com\wefox\automation\java\page\ProductDetailsPage.class
+com\wefox\automation\java\page\ShopingbagPage.class

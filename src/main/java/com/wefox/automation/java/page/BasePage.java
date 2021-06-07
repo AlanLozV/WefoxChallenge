@@ -94,7 +94,7 @@ public class BasePage {
         try {
             JavascriptExecutor executor = (JavascriptExecutor) getDriver();
             executor.executeScript("window.scrollBy(0,500)");
-            Thread.sleep(1500);
+            Thread.sleep(2500);
         } catch (Exception e) {
             e.getMessage();
         }
@@ -104,7 +104,7 @@ public class BasePage {
         try {
             JavascriptExecutor executor = (JavascriptExecutor) getDriver();
             executor.executeScript("window.scrollBy(0,-500)");
-            Thread.sleep(1500);
+            Thread.sleep(2500);
         } catch (Exception e) {
             e.getMessage();
         }
