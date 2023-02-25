@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.DecimalFormat;
+
 public class ShopingbagPage extends BasePage {
 
     private static final Logger log = LoggerFactory.getLogger(ShopingbagPage.class);
@@ -65,15 +67,16 @@ public class ShopingbagPage extends BasePage {
 
     public String calculateTotalPurchase() {
         String priceAsString = getProductPrice();
-        String[] priceAsStringSplit = priceAsString.replace(",", ".").split(" ");
-        priceAsString = priceAsStringSplit[0].replace("Price\n", "");
+        priceAsString = priceAsString.replace("$", "").replace("Price\n", "");
+        log.info(priceAsString);
 
         float price = Float.parseFloat(priceAsString);
-        int quantity = Integer.parseInt(getProductQuantity());
+        float quantity = Integer.parseInt(getProductQuantity());
 
-        float total = price * quantity;
-        String totalCalc = total + " €";
-        totalCalc = totalCalc.replace(".", ",");
+        float total = (price * quantity) + 90;
+        DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        decimalFormat.format(total);
+        String totalCalc = "$" + String.format("%.2f", total);
         log.info(totalCalc);
 
         return totalCalc;

@@ -9,10 +9,10 @@ public class LandingElements {
     public By mainBarNav = By.cssSelector("nav[class*='MainBarstyles__NavWrapper']");
     public By mainBarSearch = By.cssSelector("div[class*='MainBarstyles__SearchContainer']");
 
-    public By shopByMenuItem = By.cssSelector("button[data-analytics-title='shop-by']");
+    public By shopByMenuItem = By.cssSelector("button[data-analytics-title='shop']");
     public By shopByAge = By.cssSelector("button[data-analytics-title='age']");
 
-    public By agesRanges = By.cssSelector("div[class*='MegaMenuTwoLevelsstyles__ContentWrapper']");
+    public By agesRanges = By.cssSelector("div[class='SubMenustyles__ChildrenContainer-lbil4s-7 iYWHPD']");
     public By ageOnePlus = By.cssSelector("a[data-analytics-title='1.5+']");
     public By ageFourPlus = By.cssSelector("a[data-analytics-title='4+']");
     public By ageSixPlus = By.cssSelector("a[data-analytics-title='6+']");

@@ -42,8 +42,8 @@ public class LegoTest extends BaseTest {
         Assert.assertTrue("Shop By Age Page is displayed correctly",
                 shopByAgePage.verifyPageContent());
 
-        Assert.assertTrue("Filtered by 0 to 20 Euros",
-                shopByAgePage.clickZeroToTwentyEuros());
+        Assert.assertTrue("Filtered by 0 to 500 MXN",
+                shopByAgePage.clickZeroToFiveHundredMXN());
 
         Assert.assertTrue("The number of results is correct!",
                 shopByAgePage.verifyNumberOfResults());

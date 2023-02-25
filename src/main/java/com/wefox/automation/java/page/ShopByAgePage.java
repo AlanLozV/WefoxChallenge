@@ -7,9 +7,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class ShopByAgePage extends BasePage {
 
     private static final Logger log = LoggerFactory.getLogger(ShopByAgePage.class);
@@ -31,21 +28,20 @@ public class ShopByAgePage extends BasePage {
     }
 
     public boolean verifyPageContent() {
-        return isElementPresent(byElements.filterTable) != null &&
-                isElementPresent(byElements.resultsContent) != null;
+        return isElementPresent(byElements.pageContent) != null;
     }
 
     public ShopByAgePage locatePriceFilters() {
         scrollToElement(byElements.priceSectionTitle);
-        getElement(byElements.zeroToTwentyEurosCheckbox);
+        getElement(byElements.zeroToFiveHundredMXNCheckbox);
         return this;
     }
 
-    public boolean clickZeroToTwentyEuros() {
+    public boolean clickZeroToFiveHundredMXN() {
         locatePriceFilters();
-        waitForElementToBeClickable(byElements.zeroToTwentyEurosCheckbox);
-        if (clickElementJE(byElements.zeroToTwentyEurosCheckbox)) {
-            log.info("Marked zero to twenty Euros checkbox!");
+        waitForElementToBeClickable(byElements.zeroToFiveHundredMXNCheckbox);
+        if (clickElementJE(byElements.zeroToFiveHundredMXNCheckbox)) {
+            log.info("Marked zero to five hundred MXN checkbox!");
             return true;
         }
         return false;
@@ -61,27 +57,26 @@ public class ShopByAgePage extends BasePage {
     }
 
     public String getNumberOfResults() {
-        return getText(byElements.zeroToTwentyEurosCheckboxText);
+        return getText(byElements.zeroToFiveHundredMXNCheckboxText);
     }
 
-    public String getListingSummaryText() {
-        return getText(byElements.listingSummary);
+    public String getResultCountText() {
+        return getText(byElements.resultCount);
     }
 
     public boolean verifyNumberOfResults() {
         locateListingSummary();
         String filterText = getNumberOfResults();
-        String listingSummaryText = getListingSummaryText();
+        String resultCountText = getResultCountText();
         String[] filterTextSplit = filterText.split("\\[");
         String filterText2 = filterTextSplit[1];
         String[] filterTextSplit2 = filterText2.split("]");
         String numberOfProductsFiltered = filterTextSplit2[0];
+        resultCountText = resultCountText.substring(10,12);
         log.info(numberOfProductsFiltered + " products");
-        log.info(listingSummaryText);
+        log.info(resultCountText);
 
-        Pattern pattern = Pattern.compile(numberOfProductsFiltered);
-        Matcher matcher = pattern.matcher(listingSummaryText);
-        return matcher.find();
+        return numberOfProductsFiltered.equals(resultCountText);
     }
 
     public ShopByAgePage locateProductInResults() {
@@ -93,8 +88,8 @@ public class ShopByAgePage extends BasePage {
 
     public boolean clickOnFirstProduct() {
         locateProductInResults();
-        waitForElementToBeClickable(byElements.spaceShipMickeyItem);
-        if (clickElement(byElements.spaceShipMickeyItem)) {
+        waitForElementToBeClickable(byElements.firstItem);
+        if (clickElement(byElements.firstItem)) {
             log.info("Clicked Product Item!");
             return true;
         }
